@@ -1,0 +1,16 @@
+input:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.error {
+  color: #991b1b;
+}
+
+.invalid {
+  border: 2px solid #991b1b;
+}
+
+form.submitted input:invalid {
+border: 2px solid #991b1b;
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Week 2 Site</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Signup</h1>
+    <main>
+      <section id="form" aria-labelledby="form-title">
+        <h2 id="form-title">Create an account</h2>
+
+        <form id="signupForm" novalidate>
+          <div>
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              required
+              minlength="2"
+              aria-describedby="nameError"
+            />
+            <p id="nameError"></p>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              aria-describedby="emailError"
+            />
+            <p id="emailError"></p>
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              required
+              minlength="8"
+              aria-describedby="passwordError"
+            />
+            <p id="passwordError"></p>
+          </div>
+
+          <button type="submit">Create account</button>
+          <p role="status" id="formStatus"></p>
+        </form>
+      </section>
+
+      <section id="help" aria-labelledby="help-title">
+        <h2 id="help-title">Help</h2>
+        <p>Ensure all information is correct and up-to-date.</p>
+      </section>
+    </main>
+
+    <footer>
+      <small>CS 324/424</small>
+    </footer>
+  </body>
+</html>
+
+
+
