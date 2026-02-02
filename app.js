@@ -42,8 +42,8 @@ form.addEventListener('submit', (event) => {
 
   let firstInvalid = null;
 
-  if (name.length < 2) {
-    showError(nameInput, nameError, 'Enter your name (MUST be at least 2 characters).');
+  if (name.length < 3) {
+    showError(nameInput, nameError, 'Enter your name (MUST be at least 3 characters).');
     firstInvalid ??= nameInput;
   }
 
